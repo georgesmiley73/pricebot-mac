@@ -5,8 +5,7 @@ DATA_FILES = []
 OPTIONS = {
     'argv_emulation': True,
     'packages': ['tkinter', 'numpy'],
-    # disable codesigning (no identity on the runner)
-    'codesign_identity': None,
+    # removed codesign_identity to avoid “no such option” error
 }
 
 setup(
