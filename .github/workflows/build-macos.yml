@@ -3,6 +3,7 @@ name: Build macOS DMG
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build-macos:
@@ -36,9 +37,6 @@ jobs:
         create-dmg \
           --overwrite \
           --volname "PriceBot" \
-          --window-pos 200 120 \
-          --window-size 600 400 \
-          --icon-size 100 \
           dist/PriceBot.app \
           release/PriceBot.dmg
 
