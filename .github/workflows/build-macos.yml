@@ -41,7 +41,7 @@ jobs:
           release/PriceBot.dmg
 
     - name: Upload DMG artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: PriceBot-macos-dmg
         path: release/PriceBot.dmg
