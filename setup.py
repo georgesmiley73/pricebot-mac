@@ -5,6 +5,8 @@ DATA_FILES = []
 OPTIONS = {
     'argv_emulation': True,
     'packages': ['tkinter', 'numpy'],
+    # disable codesigning (no identity on the runner)
+    'codesign_identity': None,
 }
 
 setup(
